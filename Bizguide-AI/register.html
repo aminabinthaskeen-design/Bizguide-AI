@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Business Account - BizGuide AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>BizGuide AI</h2>
+
+        <button onclick="window.location.href='index.html'">
+            Home
+        </button>
+    </nav>
+
+
+    <section class="login-page">
+
+        <div class="login-box">
+
+            <h1>🚀 Create Account</h1>
+
+            <p>
+                Create your business account to access BizGuide AI.
+            </p>
+
+
+            <form onsubmit="registerUser(event)">
+
+                <label>Business Name</label>
+
+                <input
+                    type="text"
+                    id="businessName"
+                    placeholder="Enter your business name"
+                    required
+                >
+
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create a password"
+                    required
+                >
+
+
+                <label>Confirm Password</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    required
+                >
+
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <p>
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>

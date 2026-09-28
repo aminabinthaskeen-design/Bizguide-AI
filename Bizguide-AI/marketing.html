@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marketing Ideas - BizGuide AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2>BizGuide AI</h2>
+
+        <button onclick="window.location.href='dashboard.html'">
+            Dashboard
+        </button>
+
+    </nav>
+
+
+    <section class="tool-page">
+
+        <h1>📢 Marketing Ideas</h1>
+
+        <p>
+            Get simple marketing ideas for your business.
+        </p>
+
+
+        <div class="calculator-box">
+
+            <label>Business Type</label>
+
+            <select id="businessType">
+
+                <option value="">
+                    Select Business Type
+                </option>
+
+                <option value="accessories">
+                    Accessories
+                </option>
+
+                <option value="gifts">
+                    Gifts & Hampers
+                </option>
+
+                <option value="clothing">
+                    Clothing
+                </option>
+
+                <option value="food">
+                    Food Business
+                </option>
+
+                <option value="stationery">
+                    Stationery
+                </option>
+
+                <option value="beauty">
+                    Beauty Products
+                </option>
+
+                <option value="other">
+                    Other Business
+                </option>
+
+            </select>
+
+
+            <label>Marketing Platform</label>
+
+            <select id="platform">
+
+                <option value="">
+                    Select Platform
+                </option>
+
+                <option value="instagram">
+                    Instagram
+                </option>
+
+                <option value="whatsapp">
+                    WhatsApp
+                </option>
+
+                <option value="both">
+                    Instagram + WhatsApp
+                </option>
+
+            </select>
+
+
+            <label>Budget</label>
+
+            <select id="budget">
+
+                <option value="">
+                    Select Budget
+                </option>
+
+                <option value="free">
+                    ₹0 - Free Marketing
+                </option>
+
+                <option value="low">
+                    Below ₹500
+                </option>
+
+                <option value="medium">
+                    ₹500 - ₹2000
+                </option>
+
+                <option value="high">
+                    Above ₹2000
+                </option>
+
+            </select>
+
+
+            <button onclick="generateMarketingIdeas()">
+                Generate Ideas
+            </button>
+
+        </div>
+
+
+        <div class="result-box" id="marketingResult">
+
+            <h2>💡 Your Marketing Ideas</h2>
+
+            <p>
+                Select your business type, platform and budget.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script src="marketing.js"></script>
+
+</body>
+
+</html>

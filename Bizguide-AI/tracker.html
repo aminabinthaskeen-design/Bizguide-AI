@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Tracker - BizGuide AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>BizGuide AI</h2>
+
+        <button onclick="window.location.href='dashboard.html'">
+            Dashboard
+        </button>
+    </nav>
+
+
+    <section class="tool-page">
+
+        <h1>📊 Business Tracker</h1>
+
+        <p>
+            Track your sales, expenses and business profit easily.
+        </p>
+
+
+        <div class="calculator-box">
+
+            <label>Sale Amount (₹)</label>
+            <input
+                type="number"
+                id="saleAmount"
+                placeholder="Enter sale amount"
+            >
+
+
+            <label>Expense Amount (₹)</label>
+            <input
+                type="number"
+                id="expenseAmount"
+                placeholder="Enter expense amount"
+            >
+
+
+            <button onclick="addTransaction()">
+                Add Transaction
+            </button>
+
+        </div>
+
+
+        <div class="result-box">
+
+            <h2>📈 Business Summary</h2>
+
+            <p>
+                Total Sales:
+                <strong>₹<span id="totalSales">0</span></strong>
+            </p>
+
+            <p>
+                Total Expenses:
+                <strong>₹<span id="totalExpenses">0</span></strong>
+            </p>
+
+            <p>
+                Net Profit:
+                <strong>₹<span id="netProfit">0</span></strong>
+            </p>
+
+        </div>
+
+
+        <div class="calculator-box">
+
+            <h2>🧾 Transactions</h2>
+
+            <div id="transactionList">
+                <p>No transactions added yet.</p>
+            </div>
+
+            <button onclick="clearTracker()">
+                Clear All Data
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="tracker.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nearby Suppliers - BizGuide AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            BizGuide <span>AI</span>
+        </div>
+
+        <a href="dashboard.html" class="login-btn">
+            Dashboard
+        </a>
+
+    </nav>
+
+
+    <section class="tool-page">
+
+        <h1>📍 Nearby Suppliers</h1>
+
+        <p>
+            Find wholesale suppliers near your location.
+        </p>
+
+
+        <div class="supplier-box">
+
+            <label>Your Location</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Example: Colachel, Kanyakumari"
+            >
+
+
+            <label>Product Category</label>
+
+            <select id="supplierCategory">
+
+                <option value="">
+                    -- Select Category --
+                </option>
+
+                <option value="hair accessories">
+                    Hair Accessories
+                </option>
+
+                <option value="bracelets">
+                    Bracelets
+                </option>
+
+                <option value="gift items">
+                    Gift Items
+                </option>
+
+                <option value="stationery">
+                    Stationery
+                </option>
+
+                <option value="toys">
+                    Toys
+                </option>
+
+                <option value="beauty accessories">
+                    Beauty Accessories
+                </option>
+
+            </select>
+
+
+            <button onclick="findSuppliers()">
+                🔎 Find Suppliers
+            </button>
+
+
+            <div id="supplierResult"></div>
+
+        </div>
+
+    </section>
+
+
+    <script src="supplier.js"></script>
+
+</body>
+
+</html>

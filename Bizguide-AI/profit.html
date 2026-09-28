@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profit Calculator - BizGuide AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            BizGuide <span>AI</span>
+        </div>
+
+        <a href="dashboard.html" class="login-btn">
+            Dashboard
+        </a>
+
+    </nav>
+
+
+    <section class="tool-page">
+
+        <h1>💰 Profit Calculator</h1>
+
+        <p>
+            Calculate your total cost, revenue and profit.
+        </p>
+
+
+        <div class="calculator-box">
+
+            <label>Product Cost</label>
+
+            <input
+                type="number"
+                id="productCost"
+                placeholder="Example: 40"
+            >
+
+
+            <label>Packaging Cost</label>
+
+            <input
+                type="number"
+                id="packagingCost"
+                placeholder="Example: 5"
+            >
+
+
+            <label>Other Expense</label>
+
+            <input
+                type="number"
+                id="otherCost"
+                placeholder="Example: 5"
+            >
+
+
+            <label>Selling Price</label>
+
+            <input
+                type="number"
+                id="sellingPrice"
+                placeholder="Example: 80"
+            >
+
+
+            <label>Quantity</label>
+
+            <input
+                type="number"
+                id="quantity"
+                placeholder="Example: 10"
+            >
+
+
+            <button onclick="calculateProfit()">
+                Calculate Profit
+            </button>
+
+
+            <div id="profitResult" class="result-box"></div>
+
+        </div>
+
+    </section>
+
+
+    <script src="profit.js"></script>
+
+</body>
+
+</html>

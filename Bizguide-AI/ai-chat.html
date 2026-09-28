@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Business Assistant</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            BizGuide <span>AI</span>
+        </div>
+
+        <a href="dashboard.html"
+           class="login-btn">
+            Dashboard
+        </a>
+
+    </nav>
+
+
+    <section class="chat-section">
+
+        <div class="chat-header">
+
+            <h1>🤖 AI Business Assistant</h1>
+
+            <p>
+                Ask anything about starting and growing
+                your business.
+            </p>
+
+        </div>
+
+
+        <div id="chatBox" class="chat-box">
+
+            <div class="bot-message">
+
+                👋 Hi! I'm your BizGuide AI Assistant.
+
+                <br><br>
+
+                You can ask me things like:
+
+                <br><br>
+
+                • What business can I start with ₹5000?
+                <br>
+                • How can I price my products?
+                <br>
+                • Where can I buy wholesale products?
+                <br>
+                • How can I increase my profit?
+                <br>
+                • How can I market my business?
+
+            </div>
+
+        </div>
+
+
+        <div class="chat-input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Ask your business question..."
+                onkeydown="handleEnter(event)"
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="chat.js"></script>
+
+</body>
+
+</html>
